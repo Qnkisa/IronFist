@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronFirst</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/fist-logo.png">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-helper">
+            <div class="website-logo">
+                <img src="images/fist-logo.png" alt="">
+                <p>IronFist</p>
+            </div>
+            <ul id="navbar">
+                <li><a href="index.html" id="index">Home</a></li>
+                <li><a href="schedule.html" id="schedule">Schedule</a></li>
+                <li><a href="coaches.html" id="coaches">Coaches</a></li>
+                <li><a href="prices.html" id="prices">Prices</a></li>
+                <li><a href="oneonone.html" id="oneonone">Book 1-on-1</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <img src="images/pages-hero.jpg" alt="">
+        <div class="page-hero-helper"></div>
+        <div class="page-hero-content">
+            <h1>Membership <span>Prices</span></h1>
+            <div class="back-to-home">
+                <a href="index.html">Home</a>
+                <span>-></span>
+                <p>Prices</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-col">
+                <div class="website-logo">
+                    <img src="images/fist-logo.png" alt="">
+                    <p>IronFist</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p>IronFist Plovdiv</p>
+                <div class="footer-flex">
+                    <div class="footer-flex-icon">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    <p>+359 88 4579982</p>
+                </div>
+                <div class="footer-flex">
+                    <div class="footer-flex-icon">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
+                    <p>Georgi Ivanov 54 Street,  <span>Plovdiv</span></p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p>Working time</p>
+                <div class="footer-flex">
+                    <div class="footer-flex-icon">
+                        <ion-icon name="time-outline"></ion-icon>
+                    </div>
+                    <p>Monday - Sunday: 8:00 - 22:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>@Copyright 2023</p>
+            <span>All rights reserved.</span>
+            <div class="website-creator">
+                <p>Website by <a href="https://github.com/Qnkisa" target="_blank">Yanislav Angelov</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+    <script src="scripts/script.js"></script>
+    <script>
+        var currentPage = location.pathname.split("/").pop();
+
+        document.getElementById(currentPage.replace('.html', '')).style.color = "var(--clr-orange)";
+    </script>
+</body>
+</html>

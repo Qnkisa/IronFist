@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronFirst</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/fist-logo.png">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-helper">
+            <div class="website-logo">
+                <img src="images/fist-logo.png" alt="">
+                <p>IronFist</p>
+            </div>
+            <ul id="navbar">
+                <li><a href="index.html" id="index">Home</a></li>
+                <li><a href="schedule.html" id="schedule">Schedule</a></li>
+                <li><a href="coaches.html" id="coaches">Coaches</a></li>
+                <li><a href="prices.html" id="prices">Prices</a></li>
+                <li><a href="oneonone.html" id="oneonone">Book 1-on-1</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <img src="images/pages-hero.jpg" alt="">
+        <div class="page-hero-helper"></div>
+        <div class="page-hero-content">
+            <h1>Classes <span>Schedule</span></h1>
+            <div class="back-to-home">
+                <a href="index.html">Home</a>
+                <span>-></span>
+                <p>Schedule</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule-classes">
+        <h2>IronFist Gym <span>Classes</span></h2>
+        <p>Group Training</p>
+        <div class="schedule-classes-helper">
+            <div class="class-div">
+                <div class="class-heading" onclick="toggleAnswer(this)" id="class-heading-kickboxing">
+                    <p>Kickboxing</p>
+                    <div class="class-heading-icon">
+                        <ion-icon name="add-circle-outline" class="show-class" id="show-class-kickboxing"></ion-icon>
+                        <ion-icon name="remove-circle-outline" class="hide-class" id="hide-class-kickboxing"></ion-icon>
+                    </div>
+                </div>
+                <div class="class-sessions">
+                    <ul>
+                        <li>Monday: 9:00 - 10:00</li>
+                        <li>Monday: 18:30 - 19:30</li>
+                    </ul>
+                    <ul>
+                        <li>Tuesday: 9:00 - 10:00</li>
+                        <li>Tuesday: 18:30 - 19:30</li>
+                    </ul>
+                    <ul>
+                        <li>Wednesday: 9:00 - 10:00</li>
+                        <li>Wednesday: 18:30 - 19:30</li>
+                    </ul>
+                    <ul>
+                        <li>Thursday: 9:00 - 10:00</li>
+                        <li>Thursday: 18:30 - 19:30</li>
+                    </ul>
+                    <ul>
+                        <li>Friday: 9:00 - 10:00</li>
+                        <li>Friday: 18:30 - 19:30</li>
+                    </ul>
+                    <ul>
+                        <li>Saturday: 10:00 - 11:30</li>
+                    </ul>
+                    <ul>
+                        <li>Sunday: 10:00 - 11:30</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="class-div">
+                <div class="class-heading" onclick="toggleAnswer(this)" id="class-heading-boxing">
+                    <p>Boxing</p>
+                    <div class="class-heading-icon">
+                        <ion-icon name="add-circle-outline" class="show-class" id="show-class-boxing"></ion-icon>
+                        <ion-icon name="remove-circle-outline" class="hide-class" id="hide-class-boxing"></ion-icon>
+                    </div>
+                </div>
+                <div class="class-sessions">
+                    <ul>
+                        <li>Monday: 10:00 - 11:00</li>
+                        <li>Monday: 17:30 - 18:30</li>
+                    </ul>
+                    <ul>
+                        <li>Tuesday: 10:00 - 11:00</li>
+                        <li>Tuesday: 17:30 - 18:30</li>
+                    </ul>
+                    <ul>
+                        <li>Wednesday: 10:00 - 11:00</li>
+                        <li>Wednesday: 17:30 - 18:30</li>
+                    </ul>
+                    <ul>
+                        <li>Thursday: 10:00 - 11:00</li>
+                        <li>Thursday: 17:30 - 18:30</li>
+                    </ul>
+                    <ul>
+                        <li>Friday: 10:00 - 11:00</li>
+                        <li>Friday: 17:30 - 18:30</li>
+                    </ul>
+                    <ul>
+                        <li>Saturday: 11:30 - 13:00</li>
+                    </ul>
+                    <ul>
+                        <li>Sunday: 11:30 - 13:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="class-div">
+                <div class="class-heading" onclick="toggleAnswer(this)" id="class-heading-functional">
+                    <p>Functional Training</p>
+                    <div class="class-heading-icon">
+                        <ion-icon name="add-circle-outline" class="show-class" id="show-class-functional"></ion-icon>
+                        <ion-icon name="remove-circle-outline" class="hide-class" id="hide-class-functional"></ion-icon>
+                    </div>
+                </div>
+                <div class="class-sessions">
+                    <ul>
+                        <li>Monday - Sunday: 15:00 - 16:00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule-sports">
+        <div class="schedule-sports-helper">
+            <div class="sport-div">
+                <div class="sport-div-image">
+                    <img src="images/kickboxing.jpg" alt="">
+                </div>
+                <div class="sport-div-content sport-second-div">
+                    <p>Kickboxing</p>
+                    <span>Kickboxing, a potent striking martial art, employs a seamless fusion of punches, kicks, knees, and elbows for effective long-range combat while standing. At IronFirst, our emphasis is on refining stance, technique, and the execution of fluid combinations. Each session concludes with a challenging circuit, allowing you to push your cardiovascular limits to the fullest.</span>
+                </div>
+            </div>
+            <div class="sport-div">
+                <div class="sport-div-content sport-first-div">
+                    <p>Boxing</p>
+                    <span>Boxing is a combat sport involving fist-to-fist encounters, where you engage in a dynamic 'dance' with your opponent. At IronFist, we prioritize the development of footwork and the proficiency to absorb, evade, and execute seamless punching combinations.</span>
+                </div>
+                <div class="sport-div-image">
+                    <img src="images/boxing.jpg" alt="">
+                </div>
+            </div>
+            <div class="sport-div">
+                <div class="sport-div-image">
+                    <img src="images/functional-training.jpg" alt="">
+                </div>
+                <div class="sport-div-content sport-second-div">
+                    <p>Functional training</p>
+                    <span>At IronFist Fighting Academy, we integrate functional training into our programs, recognizing its vital role in enhancing performance for boxing and kickboxing. Functional training focuses on dynamic, real-world movements, promoting strength, agility, and flexibility—key elements crucial for achieving peak physical condition and success in the ring.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-col">
+                <div class="website-logo">
+                    <img src="images/fist-logo.png" alt="">
+                    <p>IronFist</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p>IronFist Plovdiv</p>
+                <div class="footer-flex">
+                    <div class="footer-flex-icon">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    <p>+359 88 4579982</p>
+                </div>
+                <div class="footer-flex">
+                    <div class="footer-flex-icon">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
+                    <p>Georgi Ivanov 54 Street,  <span>Plovdiv</span></p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p>Working time</p>
+                <div class="footer-flex">
+                    <div class="footer-flex-icon">
+                        <ion-icon name="time-outline"></ion-icon>
+                    </div>
+                    <p>Monday - Sunday: 8:00 - 22:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>@Copyright 2023</p>
+            <span>All rights reserved.</span>
+            <div class="website-creator">
+                <p>Website by <a href="https://github.com/Qnkisa" target="_blank">Yanislav Angelov</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/script.js"></script>
+    <script>
+        var currentPage = location.pathname.split("/").pop();
+
+        document.getElementById(currentPage.replace('.html', '')).style.color = "var(--clr-orange)";
+    </script>
+</body>
+</html>

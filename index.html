@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronFirst</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/fist-logo.png">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-helper">
+            <div class="website-logo">
+                <img src="images/fist-logo.png" alt="">
+                <p>IronFist</p>
+            </div>
+            <ul id="navbar">
+                <li><a href="index.html" id="index">Home</a></li>
+                <li><a href="schedule.html" id="schedule">Schedule</a></li>
+                <li><a href="coaches.html" id="coaches">Coaches</a></li>
+                <li><a href="prices.html" id="prices">Prices</a></li>
+                <li><a href="oneonone.html" id="oneonone">Book 1-on-1</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="index-hero">
+        <img src="images/index-hero.jpg" alt="">
+        <div class="index-hero-helper"></div>
+        <div class="index-h1-helper">
+            <h1>IronFist <span>Fighting Academy</span></h1>
+        </div>
+    </section>
+
+    <article class="index-article" id="index-article">
+        <div class="index-article-div">
+            <h2>Welcome to the home of <span>Champions</span></h2>
+            <p class="index-article-p">Welcome to IronFist, where the power of discipline meets the artistry of martial prowess! At our state-of-the-art gym, we've crafted an unparalleled sanctuary for individuals seeking a transformative journey through the realms of boxing, kickboxing, and conditioning training.</p>
+            <p class="index-article-p">Immerse yourself in a dynamic and supportive community where expert trainers guide you through invigorating workouts tailored to enhance your boxing and kickboxing prowess. Whether you're a seasoned warrior or a newcomer to the martial arts world, our diverse range of classes caters to all skill levels.</p>
+            <p class="index-article-p">Join IronFist and unleash the fighter within you. Fuel your passion, sculpt your body, and embrace the transformative power of martial arts. Your journey towards peak physical and mental performance starts here. Iron sharpens iron, and at IronFist, we forge champions.</p>
+            <a href="oneonone.html">Book 1-on-1 Coaching</a>
+        </div>
+    </article>
+
+    <section class="index-coaches">
+        <h3>Train with the best</h3>
+        <div class="index-coaches-grid">
+            <div class="index-coach-div" id="first-coach">
+                <img src="images/bones.jpg" alt="">
+                <div class="index-coach-content">
+                    <p>Ivan Ivanov</p>
+                    <span>Boxing coach</span>
+                </div>
+            </div>
+            <div class="index-coach-div" id="second-coach">
+                <img src="images/chael.webp" alt="">
+                <div class="index-coach-content">
+                    <p>Georgi Petrov</p>
+                    <span>Conditioning coach</span>
+                </div>
+            </div>
+            <div class="index-coach-div" id="third-coach">
+                <img src="images/conor.jpg" alt="">
+                <div class="index-coach-content">
+                    <p>Dimitar Angelov</p>
+                    <span>Kickboxing coach</span>
+                </div>
+            </div>
+            <div class="index-coach-div" id="fourth-coach">
+                <img src="images/khabib.jpg" alt="">
+                <div class="index-coach-content">
+                    <p>Martin Dimitrov</p>
+                    <span>Boxing coach</span>
+                </div>
+            </div>
+        </div>
+        <div class="index-coaches-cta">
+            <a href="schedule.html">Browse our classes</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-col">
+                <div class="website-logo">
+                    <img src="images/fist-logo.png" alt="">
+                    <p>IronFist</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p>IronFist Plovdiv</p>
+                <div class="footer-flex">
+                    <div class="footer-flex-icon">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    <p>+359 88 4579982</p>
+                </div>
+                <div class="footer-flex">
+                    <div class="footer-flex-icon">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
+                    <p>Georgi Ivanov 54 Street,  <span>Plovdiv</span></p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p>Working time</p>
+                <div class="footer-flex">
+                    <div class="footer-flex-icon">
+                        <ion-icon name="time-outline"></ion-icon>
+                    </div>
+                    <p>Monday - Sunday: 8:00 - 22:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>@Copyright 2023</p>
+            <span>All rights reserved.</span>
+            <div class="website-creator">
+                <p>Website by <a href="https://github.com/Qnkisa" target="_blank">Yanislav Angelov</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/script.js"></script>
+    <script>
+        var currentPage = location.pathname.split("/").pop();
+
+        document.getElementById(currentPage.replace('.html', '')).style.color = "var(--clr-orange)";
+    </script>
+</body>
+</html>
