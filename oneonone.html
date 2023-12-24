@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IronFirst</title>
+    <title>IronFist</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="images/fist-logo.png">
 </head>
@@ -43,6 +43,28 @@
         </div>
     </section>
 
+    <section class="one-on-one">
+        <img src="images/book-1-on-1.jpg" alt="">
+        <div class="one-on-one-form">
+            <h2>Book 1-on-1 <span>coaching</span> session</h2>
+            <form action="index.html" method="post" onsubmit="return validateForm(event)">
+                <div class="form-helper">
+                    <input type="text" name="firstName" placeholder="First Name">
+                    <input type="text" name="lastName" placeholder="Last Name">
+                </div>
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <div class="form-helper">
+                    <input type="date" name="date" placeholder="Date">
+                    <input type="text" name="hourMinute" placeholder="Time(Hour:Minute)">
+                </div>
+                <div class="form-submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+            <p id="validationMessage"></p>
+        </div>
+    </section>
 
     <footer>
         <div class="footer-top">
@@ -87,6 +109,7 @@
     </footer>
 
 
+    <script src="scripts/oneonone.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="scripts/script.js"></script>

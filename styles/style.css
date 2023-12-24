@@ -139,12 +139,12 @@ nav ul li a:hover{
 
 .page-hero{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
 }
 
 .page-hero-helper{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 10;
     position: absolute;
@@ -154,7 +154,7 @@ nav ul li a:hover{
 
 .page-hero img{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     z-index: 10;
     object-fit: cover;
     position: absolute;
@@ -293,6 +293,7 @@ footer{
     font-size: 5rem;
     line-height: 80px;
     margin-bottom: 30px;
+    color: var(--clr-purple);
 }
 
 .index-article h2 span{
@@ -432,6 +433,7 @@ footer{
     font-size: 4rem;
     text-align: center;
     margin-bottom: 15px;
+    color: var(--clr-purple);
 }
 
 .schedule-classes h2 span{
@@ -530,6 +532,7 @@ footer{
     font-size: 2.25rem;
     font-weight: bold;
     margin-bottom: 15px;
+    color: var(--clr-purple);
 }
 
 .sport-div span{
@@ -538,24 +541,240 @@ footer{
     line-height: 28px;
 }
 
-.sport-first-div{
-    position: relative;
-    opacity: 0.5;
-    right: 75px;
-    transition: all .5s;
+/*coaches start*/
+
+.coach-div{
+    width: 100%;
+    padding: 5rem 2rem;
 }
 
-.sport-second-div{
-    position: relative;
-    opacity: 0.5;
-    left: 75px;
-    transition: all .5s;
+.coach-div-helper{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
 }
 
-.sport-first-div.is-visible,.sport-second-div.is-visible{
-    opacity: 1;
-    right: 0;
-    left: 0;
+.coach-div:last-child{
+    margin-bottom: 0;
+}
+
+.coach-div-top{
+    margin-bottom: 30px;
+}
+
+.coach-div-top img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 30px;
+}
+
+.coach-div-top-content p{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--clr-purple);
+}
+
+.coach-div-top-content span{
+    color: var(--clr-text-on-white-background);
+}
+
+.coach-div-bottom p{
+    font-size: 1.25rem;
+    color: var(--clr-text-on-white-background);
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.coach-div-dark{
+    background-color: var(--clr-index-coaches);
+}
+
+.coach-div-dark p{
+    color: white;
+}
+
+.coach-div-dark span{
+    color: rgb(187, 184, 184);
+}
+
+/*prices start*/
+
+.prices{
+    padding: 8rem 2rem;
+}
+
+.prices h2{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 50px;
+    color: var(--clr-purple);
+}
+
+.prices-helper{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.price-div{
+    transition: all .5s ease-in-out;
+    position: relative;
+    top: 100px;
+}
+
+.price-div.is-visible{
+    top: 0;
+}
+
+.price-div-top{
+    width: 100%;
+    height: 250px;
+    background-color: var(--clr-purple);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.price-div-top p{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.price-div-bottom{
+    border-bottom: 1px solid rgb(210, 210, 210);
+    border-left: 1px solid rgb(210, 210, 210);
+    border-right: 1px solid rgb(210, 210, 210);
+}
+
+.price-div-bottom p{
+    width: 100%;
+    height: 100px;
+    font-size: 1.25rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    color: var(--clr-text-on-white-background);
+    align-items: center;
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+.price-div-bottom p:last-child{
+    border-bottom: none;
+}
+
+.price-div-bottom p:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+.price-div-center .price-div-top{
+    background-color: var(--clr-orange);
+    height: 200px;
+}
+
+.prices-cta{
+    text-align: center;
+}
+
+.prices-cta a{
+    background-color: var(--clr-orange);
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: var(--fw-heavy);
+    transition: all .3s;
+    border: 1px solid var(--clr-orange);
+}
+
+.prices-cta a:hover{
+    background-color: white;
+    color: var(--clr-orange);
+}
+
+/*one on one start*/
+
+.one-on-one{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    align-items: center;
+}
+
+.one-on-one img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.one-on-one h2{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--clr-purple);
+    margin-bottom: 20px;
+}
+
+.one-on-one h2 span{
+    color: var(--clr-orange);
+}
+
+.one-on-one form{
+    padding: 0 4rem;
+}
+
+.one-on-one input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(216, 216, 216);
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    transition: all .3s;
+}
+
+.one-on-one input:focus{
+    border: 1px solid gray;
+}
+
+.form-helper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.one-on-one input[type="submit"]{
+    border: 1px solid var(--clr-orange);
+    background-color: var(--clr-orange);
+    color:white;
+    text-transform: uppercase;
+    font-weight: var(--fw-heavy);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.one-on-one input[type="submit"]:hover{
+    background-color: white;
+    color: var(--clr-orange);
+}
+
+#validationMessage{
+    text-align: center;
+    font-style: italic;
+    color: var(--clr-gray);
 }
 
 /*responsive design start*/
@@ -584,6 +803,11 @@ footer{
 
     #first-coach,#second-coach,#third-coach,#fourth-coach{
         transition: all .3s;
+    }
+
+    /*prices page responsive*/
+    .prices-helper{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
@@ -622,6 +846,27 @@ footer{
     /*schedule sports responsive*/
     .schedule-sports{
         padding: 0 0 10rem;
+    }
+
+    /*coaches page responsive*/
+    .coach-div-helper{
+        display: block;
+    }
+
+    /*one on one responsive*/
+    .one-on-one{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .one-on-one-form{
+        order: 1;
+        padding: 4rem 0;
+    }
+
+    .one-on-one img{
+        order: 2;
+        height: 300px;
     }
 }
 
@@ -842,5 +1087,80 @@ footer{
         font-size: 1rem;
         line-height: 25px;
     }
+
+    /*coaches page responsive*/
+
+    .coach-div{
+        padding: 3.5rem 2rem;
+    }
+
+    .coach-div-top img{
+        width: 250px;
+        height: 350px;
+        margin-bottom: 15px;
+    }
+
+    .coach-div-top-content p{
+        font-size: 2rem;
+    }
+
+    .coach-div-top{
+        margin-bottom: 20px;
+    }
+
+    .coach-div-bottom p{
+        font-size: 1rem;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
     
+    /*prices page responsive*/
+
+    .prices{
+        padding: 10vh 2rem;
+    }
+
+    .prices h2{
+        font-size: 2.25rem;
+        margin-bottom: 30px;
+    }
+
+    .prices-helper{
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .price-div{
+        margin-bottom: 50px;
+        top: 50px;
+    }
+
+    .price-div-top{
+        height: 135px;
+    }
+
+    .price-div-top p{
+        font-size: 1.75rem;
+    }
+
+    .price-div-bottom p{
+        font-size: 1.1rem;
+        height: 75px;
+    }
+
+    /*one on one responsive*/
+
+    .one-on-one-form{
+        padding: 3rem 0;
+    }
+
+    .one-on-one form{
+        padding: 0 2rem;
+    }
+
+    .one-on-one h2{
+        font-size: 1.75rem;
+        margin-bottom: 15px;
+    }
+
 }
